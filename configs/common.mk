@@ -98,14 +98,14 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
 # Ringtones
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/ringtones/Jungle.ogg:/system/media/audio/ringtones/Jungle.ogg
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Scarabaeus.ogg \
-    ro.config.notification_sound=Antimony.ogg \
-    ro.config.alarm_alert=Scandium.ogg
+    ro.config.ringtone=Calypso Steel.ogg \
+    ro.config.notification_sound=Europa.ogg \
+    ro.config.alarm_alert=Argon.ogg
 
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
