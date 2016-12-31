@@ -103,7 +103,7 @@ PRODUCT_COPY_FILES += \
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Calypso Steel.ogg \
+    ro.config.ringtone=Calypso_Steel.ogg \
     ro.config.notification_sound=Europa.ogg \
     ro.config.alarm_alert=Argon.ogg
 
