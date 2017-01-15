@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
     Torch \
     VisualizationWallpapers
 
+# OmniRom packages
+PRODUCT_PACKAGES += \
+    OmniStyle
+
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
