@@ -1,4 +1,5 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2016, The CyanogenMod Project
+#           (C) 2017, The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,37 +13,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+$(call inherit-product, device/zte/axon7/full_axon7.mk)
 
-# Inherit some common AICP stuff
+# Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# Inherit from dior device
-$(call inherit-product, device/xiaomi/dior/device.mk)
-$(call inherit-product-if-exists, vendor/xiaomi/dior/dior-vendor.mk)
-
-PRODUCT_NAME := aicp_dior
-PRODUCT_DEVICE := dior
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := HM NOTE 1LTE
-
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_NAME := aicp_axon7
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=dior
+    PRODUCT_NAME="P996A01_N" \
+    BUILD_FINGERPRINT="ZTE/P996A01_N/ailsa_ii:7.0/NRD90M/20170128.052618:user/release-keys" \
+    PRIVATE_BUILD_DESC="P996A01_N-user 7.0 NRD90M 20170128.052618 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Hemant Sharma (hemantbeast)"
+    DEVICE_MAINTAINERS="Faradis (Druboo666) "
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
 -include vendor/aicp/configs/bootanimation.mk
-

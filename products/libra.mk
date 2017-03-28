@@ -34,7 +34,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := libra
 PRODUCT_NAME := aicp_libra
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Mi 4c
+PRODUCT_MODEL := Mi-4c
 TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -50,8 +50,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="Xiaomi/libra/libra:7.0/NRD90M/7.2.16:user/release-keys" \
-    PRIVATE_BUILD_DESC="libra-user 7.0 NRD90M 7.2.16 release-keys"
+    BUILD_FINGERPRINT="Xiaomi/libra/libra:5.1.1/LMY47V/V8.2.1.0.LXKCNDL:user/release-keys" \
+    PRIVATE_BUILD_DESC="libra-user 5.1.1 LMY47V V8.2.1.0.LXKCNDL release-keys"
 
 
 TARGET_OTA_ASSERT_DEVICE := libra
